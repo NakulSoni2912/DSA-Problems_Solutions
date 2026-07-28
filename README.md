@@ -42,6 +42,7 @@
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0234-palindrome-linked-list) |
+| [0328-odd-even-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0328-odd-even-linked-list) |
 ## Two Pointers
 |  |
 | ------- |

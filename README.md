@@ -29,6 +29,7 @@
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0232-implement-queue-using-stacks) |
+| [0234-palindrome-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0234-palindrome-linked-list) |
 ## Design
 |  |
 | ------- |
@@ -37,4 +38,16 @@
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0232-implement-queue-using-stacks) |
+## Linked List
+|  |
+| ------- |
+| [0234-palindrome-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0234-palindrome-linked-list) |
+## Two Pointers
+|  |
+| ------- |
+| [0234-palindrome-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0234-palindrome-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0234-palindrome-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0234-palindrome-linked-list) |
 <!---LeetCode Topics End-->

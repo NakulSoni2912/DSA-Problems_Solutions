@@ -7,11 +7,13 @@
 | [0033-search-in-rotated-sorted-array](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0035-search-insert-position) |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0238-product-of-array-except-self) |
 ## Hash Table
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
 ## Sorting
 |  |
 | ------- |
@@ -51,4 +53,8 @@
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0234-palindrome-linked-list) |
+## Sliding Window
+|  |
+| ------- |
+| [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
 <!---LeetCode Topics End-->

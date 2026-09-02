@@ -8,6 +8,7 @@
 | [0035-search-insert-position](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0035-search-insert-position) |
 | [0039-combination-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0046-permutations) |
+| [0078-subsets](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0078-subsets) |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0238-product-of-array-except-self) |
@@ -68,6 +69,7 @@
 | ------- |
 | [0039-combination-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0046-permutations) |
+| [0078-subsets](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0078-subsets) |
 ## Tree
 |  |
 | ------- |
@@ -91,6 +93,7 @@
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0078-subsets) |
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 ## Pigeonhole Principle
 |  |

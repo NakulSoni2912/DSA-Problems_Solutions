@@ -78,6 +78,7 @@
 |  |
 | ------- |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [1971-find-if-path-exists-in-graph](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1971-find-if-path-exists-in-graph) |
 ## Binary Tree
 |  |
 | ------- |
@@ -130,6 +131,7 @@
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
+| [1971-find-if-path-exists-in-graph](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1971-find-if-path-exists-in-graph) |
 ## Knapsack Problem
 |  |
 | ------- |
@@ -146,4 +148,12 @@
 |  |
 | ------- |
 | [1143-longest-common-subsequence](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1143-longest-common-subsequence) |
+## Union-Find
+|  |
+| ------- |
+| [1971-find-if-path-exists-in-graph](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1971-find-if-path-exists-in-graph) |
+## Graph Theory
+|  |
+| ------- |
+| [1971-find-if-path-exists-in-graph](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1971-find-if-path-exists-in-graph) |
 <!---LeetCode Topics End-->

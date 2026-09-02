@@ -12,6 +12,7 @@
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0238-product-of-array-except-self) |
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
+| [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
 ## Hash Table
 |  |
 | ------- |
@@ -116,8 +117,21 @@
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0070-climbing-stairs) |
+| [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
 ## Memoization
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0070-climbing-stairs) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
+## Knapsack Problem
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
+## Complete Knapsack
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
 <!---LeetCode Topics End-->

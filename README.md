@@ -99,4 +99,16 @@
 |  |
 | ------- |
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
+## Math
+|  |
+| ------- |
+| [0258-add-digits](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0258-add-digits) |
+## Simulation
+|  |
+| ------- |
+| [0258-add-digits](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0258-add-digits) |
+## Number Theory
+|  |
+| ------- |
+| [0258-add-digits](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0258-add-digits) |
 <!---LeetCode Topics End-->

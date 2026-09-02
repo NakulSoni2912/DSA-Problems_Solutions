@@ -6,6 +6,7 @@
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0035-search-insert-position) |
+| [0046-permutations](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0046-permutations) |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0238-product-of-array-except-self) |
@@ -57,4 +58,8 @@
 |  |
 | ------- |
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
+## Backtracking
+|  |
+| ------- |
+| [0046-permutations](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0046-permutations) |
 <!---LeetCode Topics End-->

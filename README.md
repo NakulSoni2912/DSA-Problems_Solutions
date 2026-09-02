@@ -14,6 +14,7 @@
 | [0238-product-of-array-except-self](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0238-product-of-array-except-self) |
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
+| [0403-frog-jump](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0403-frog-jump) |
 ## Hash Table
 |  |
 | ------- |
@@ -122,6 +123,7 @@
 | ------- |
 | [0070-climbing-stairs](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0070-climbing-stairs) |
 | [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
+| [0403-frog-jump](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0403-frog-jump) |
 | [1143-longest-common-subsequence](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1143-longest-common-subsequence) |
 ## Memoization
 |  |

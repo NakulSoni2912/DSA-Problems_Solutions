@@ -118,6 +118,7 @@
 | ------- |
 | [0070-climbing-stairs](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0070-climbing-stairs) |
 | [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
+| [1143-longest-common-subsequence](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1143-longest-common-subsequence) |
 ## Memoization
 |  |
 | ------- |
@@ -134,4 +135,12 @@
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
+## String
+|  |
+| ------- |
+| [1143-longest-common-subsequence](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1143-longest-common-subsequence) |
+## Longest Common Subsequence
+|  |
+| ------- |
+| [1143-longest-common-subsequence](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1143-longest-common-subsequence) |
 <!---LeetCode Topics End-->

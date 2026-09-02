@@ -11,6 +11,7 @@
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0238-product-of-array-except-self) |
+| [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 ## Hash Table
 |  |
 | ------- |
@@ -29,6 +30,7 @@
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0035-search-insert-position) |
+| [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 ## Stack
 |  |
 | ------- |
@@ -51,6 +53,7 @@
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0234-palindrome-linked-list) |
+| [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 ## Recursion
 |  |
 | ------- |
@@ -84,4 +87,16 @@
 |  |
 | ------- |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
+## Pigeonhole Principle
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
+## Floyd's Cycle Finding Algorithm
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->

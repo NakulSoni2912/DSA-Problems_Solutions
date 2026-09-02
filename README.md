@@ -64,4 +64,24 @@
 | ------- |
 | [0039-combination-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0046-permutations) |
+## Tree
+|  |
+| ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+## Binary Lifting
+|  |
+| ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+## Lowest Common Ancestor
+|  |
+| ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 <!---LeetCode Topics End-->

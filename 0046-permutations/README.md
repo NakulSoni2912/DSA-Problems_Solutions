@@ -1,21 +1,24 @@
-<h2><a href="https://leetcode.com/problems/permutations">46. Permutations</a></h2><h3>Medium</h3><hr><p>Given an array <code>nums</code> of distinct integers, return all the possible <span data-keyword="permutation-array">permutations</span>. You can return the answer in <strong>any order</strong>.</p>
+# 46. Permutations
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-<pre><strong>Input:</strong> nums = [1,2,3]
-<strong>Output:</strong> [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-</pre><p><strong class="example">Example 2:</strong></p>
-<pre><strong>Input:</strong> nums = [0,1]
-<strong>Output:</strong> [[0,1],[1,0]]
-</pre><p><strong class="example">Example 3:</strong></p>
-<pre><strong>Input:</strong> nums = [1]
-<strong>Output:</strong> [[1]]
-</pre>
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+## Intuition
+Use `next_permutation()` to generate permutations in lexicographic order. Sorting first ensures we start from the smallest permutation and generate all unique permutations.
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 6</code></li>
-	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
-	<li>All the integers of <code>nums</code> are <strong>unique</strong>.</li>
-</ul>
+## Approach
+**STL-based Permutation Generation:**
+
+1. Sort the array to get the first lexicographically smallest permutation.
+2. Use `do-while` loop with `next_permutation()`:
+   - Add current permutation to result
+   - Call `next_permutation()` to get next lexicographically ordered permutation
+   - Continue until no next permutation exists
+3. Return all collected permutations.
+
+**Example:** `nums = [1,2,3]`
+- Sorted: [1,2,3]
+- Permutations: [1,2,3] → [1,3,2] → [2,1,3] → [2,3,1] → [3,1,2] → [3,2,1]
+
+## Time Complexity
+**O(n! × n)** — Generate n! permutations, each taking O(n) to add to result.
+
+## Space Complexity
+**O(n)** excluding output. Recursion stack isn't used here; `next_permutation()` works in-place.

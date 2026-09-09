@@ -1,32 +1,26 @@
-<h2><a href="https://leetcode.com/problems/climbing-stairs">70. Climbing Stairs</a></h2><h3>Easy</h3><hr><p>You are climbing a staircase. It takes <code>n</code> steps to reach the top.</p>
+# 70. Climbing Stairs
 
-<p>Each time you can either climb <code>1</code> or <code>2</code> steps. In how many distinct ways can you climb to the top?</p>
+## Intuition
+To reach step `n`, you can either come from step `n-1` (1 step) or step `n-2` (2 steps). This is a Fibonacci-like recurrence: `f(n) = f(n-1) + f(n-2)`.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+## Approach
+**Dynamic Programming (Space-Optimized):**
 
-<pre>
-<strong>Input:</strong> n = 2
-<strong>Output:</strong> 2
-<strong>Explanation:</strong> There are two ways to climb to the top.
-1. 1 step + 1 step
-2. 2 steps
-</pre>
+1. Base cases: For n ≤ 3, return n directly.
+2. Use two variables instead of an array:
+   - `prev2 = f(2) = 2`
+   - `prev1 = f(3) = 3`
+3. Iterate from 4 to n:
+   - `curr = prev1 + prev2` (sum of previous two ways)
+   - Update: `prev2 = prev1`, `prev1 = curr`
+4. Return `prev1`.
 
-<p><strong class="example">Example 2:</strong></p>
+**Example:** `n = 4`
+- f(1) = 1, f(2) = 2, f(3) = 3
+- f(4) = f(3) + f(2) = 3 + 2 = 5
 
-<pre>
-<strong>Input:</strong> n = 3
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> There are three ways to climb to the top.
-1. 1 step + 1 step + 1 step
-2. 1 step + 2 steps
-3. 2 steps + 1 step
-</pre>
+## Time Complexity
+**O(n)** — Single loop from 4 to n.
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= n &lt;= 45</code></li>
-</ul>
+## Space Complexity
+**O(1)** — Only two variables used; no array needed.

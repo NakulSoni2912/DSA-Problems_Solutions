@@ -1,27 +1,27 @@
-<h2><a href="https://leetcode.com/problems/subsets">78. Subsets</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code> of <strong>unique</strong> elements, return <em>all possible</em> <span data-keyword="subset"><em>subsets</em></span> <em>(the power set)</em>.</p>
+# 78. Subsets
 
-<p>The solution set <strong>must not</strong> contain duplicate subsets. Return the solution in <strong>any order</strong>.</p>
+## Intuition
+For each element, decide to include it or not in the current subset. By exploring both choices recursively, generate all 2^n possible subsets.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+## Approach
+**Backtracking Recursion:**
 
-<pre>
-<strong>Input:</strong> nums = [1,2,3]
-<strong>Output:</strong> [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
-</pre>
+1. Define `solve(index, nums, temp, result)`:
+   - Add current `temp` to result (include empty subset initially)
+   - For each index `i` from `index` to end:
+     - Add `nums[i]` to `temp`
+     - Recurse with `i + 1` to explore subsets starting from next element
+     - Backtrack by removing `nums[i]`
+2. Start with index 0 and empty `temp`.
 
-<p><strong class="example">Example 2:</strong></p>
+**Example:** `nums = [1,2]`
+- Add [] → result = [[]]
+- Include 1: add [1] → result = [[], [1]]
+  - Include 2: add [1,2] → result = [[], [1], [1,2]]
+- Include 2 (from index 1): add [2] → result = [[], [1], [1,2], [2]]
 
-<pre>
-<strong>Input:</strong> nums = [0]
-<strong>Output:</strong> [[],[0]]
-</pre>
+## Time Complexity
+**O(n × 2^n)** — Generate 2^n subsets, each taking O(n) to copy.
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10</code></li>
-	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
-	<li>All the numbers of&nbsp;<code>nums</code> are <strong>unique</strong>.</li>
-</ul>
+## Space Complexity
+**O(n)** for recursion stack depth; output excludes storage count.

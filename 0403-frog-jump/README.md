@@ -1,32 +1,36 @@
-<h2><a href="https://leetcode.com/problems/frog-jump">403. Frog Jump</a></h2><h3>Hard</h3><hr><p>A frog is crossing a river. The river is divided into some number of units, and at each unit, there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.</p>
+# 403. Frog Jump
 
-<p>Given a list of <code>stones</code>&nbsp;positions (in units) in sorted <strong>ascending order</strong>, determine if the frog can cross the river by landing on the last stone. Initially, the frog is on the first stone and assumes the first jump must be <code>1</code> unit.</p>
+## Intuition
+At each stone, track possible jump lengths that got us there. From the current stone, we can jump k-1, k, or k+1 steps (where k is the jump length we used to reach current). Use memoization to avoid redundant computation.
 
-<p>If the frog&#39;s last jump was <code>k</code> units, its next jump must be either <code>k - 1</code>, <code>k</code>, or <code>k + 1</code> units. The frog can only jump in the forward direction.</p>
+## Approach
+**Memoization with Jump Length Tracking:**
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+1. Define `solve(stones[], idx, jump)`:
+   - Base case: If `idx < 0 || idx >= stones.size()`, return false
+   - If `idx == stones.size() - 1`, return true (reached last stone)
+   - If `dp[idx][jump] != -1`, return cached result
+   
+2. Try three next jumps: `k-1, k, k+1`
+   - For each `nextJump`:
+     - Skip if `nextJump <= 0`
+     - Calculate `nextPosition = stones[idx] + nextJump`
+     - Use binary search to find if `nextPosition` exists in stones
+     - If found at index `nextIdx`, recurse with `solve(stones, nextIdx, nextJump)`
+     - If any recursion succeeds, cache and return true
+   
+3. Cache false and return if no valid jump found.
 
-<pre>
-<strong>Input:</strong> stones = [0,1,3,5,6,8,12,17]
-<strong>Output:</strong> true
-<strong>Explanation:</strong> The frog can jump to the last stone by jumping 1 unit to the 2nd stone, then 2 units to the 3rd stone, then 2 units to the 4th stone, then 3 units to the 6th stone, 4 units to the 7th stone, and 5 units to the 8th stone.
-</pre>
+4. Call `solve(stones, 0, 0)` from main function.
 
-<p><strong class="example">Example 2:</strong></p>
+**Example:** `stones = [0,1,3,5,6,7,8]`
+- At stone 0: jump 1 → stone 1
+- At stone 1: jump 2 → stone 3
+- At stone 3: jump 2 → stone 5 (or jump 3 → skip, etc.)
+- Continue until reaching last stone
 
-<pre>
-<strong>Input:</strong> stones = [0,1,2,3,4,8,9,11]
-<strong>Output:</strong> false
-<strong>Explanation:</strong> There is no way to jump to the last stone as the gap between the 5th and 6th stone is too large.
-</pre>
+## Time Complexity
+**O(n²)** — n stones, each with jump values up to O(n); memoization stores O(n²) states.
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>2 &lt;= stones.length &lt;= 2000</code></li>
-	<li><code>0 &lt;= stones[i] &lt;= 2<sup>31</sup> - 1</code></li>
-	<li><code>stones[0] == 0</code></li>
-	<li><code>stones</code>&nbsp;is sorted in a strictly increasing order.</li>
-</ul>
+## Space Complexity
+**O(n²)** — DP array of size [2001][2001] (per problem constraints) + recursion stack.

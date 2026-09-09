@@ -1,27 +1,29 @@
-<h2><a href="https://leetcode.com/problems/palindrome-linked-list">234. Palindrome Linked List</a></h2><h3>Easy</h3><hr><p>Given the <code>head</code> of a singly linked list, return <code>true</code><em> if it is a </em><span data-keyword="palindrome-sequence"><em>palindrome</em></span><em> or </em><code>false</code><em> otherwise</em>.</p>
+# 234. Palindrome Linked List
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg" style="width: 422px; height: 62px;" />
-<pre>
-<strong>Input:</strong> head = [1,2,2,1]
-<strong>Output:</strong> true
-</pre>
+## Intuition
+Use recursion to traverse to the end of the list. During backtracking, compare nodes from both ends: one pointer (`left`) advances forward, the other (`right`) comes back via recursion stack.
 
-<p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg" style="width: 182px; height: 62px;" />
-<pre>
-<strong>Input:</strong> head = [1,2]
-<strong>Output:</strong> false
-</pre>
+## Approach
+**Recursive Two-Pointer Comparison:**
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+1. Maintain a class variable `left` pointing to the head.
+2. Define `check(right)` that recursively:
+   - Base case: If `right == NULL`, return `true`
+   - Recurse to `right->next` first (reach end)
+   - During backtracking, compare `left->val` with `right->val`
+   - Move `left` forward: `left = left->next`
+   - Return comparison result
+3. Call `check(head)` from `isPalindrome()`.
 
-<ul>
-	<li>The number of nodes in the list is in the range <code>[1, 10<sup>5</sup>]</code>.</li>
-	<li><code>0 &lt;= Node.val &lt;= 9</code></li>
-</ul>
+**Example:** `head = [1,2,2,1]`
+- Recurse: 1 → 2 → 2 → 1 → NULL
+- Compare during backtracking:
+  - left=1, right=1 ✓, move left forward
+  - left=2, right=2 ✓, move left forward
+  - return true
 
-<p>&nbsp;</p>
-<strong>Follow up:</strong> Could you do it in <code>O(n)</code> time and <code>O(1)</code> space?
+## Time Complexity
+**O(n)** — Visit each node once during recursion.
+
+## Space Complexity
+**O(n)** — Recursion stack depth equals list length.

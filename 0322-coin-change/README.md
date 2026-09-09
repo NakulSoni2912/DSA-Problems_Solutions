@@ -1,37 +1,31 @@
-<h2><a href="https://leetcode.com/problems/coin-change">322. Coin Change</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>coins</code> representing coins of different denominations and an integer <code>amount</code> representing a total amount of money.</p>
+# 322. Coin Change
 
-<p>Return <em>the fewest number of coins that you need to make up that amount</em>. If that amount of money cannot be made up by any combination of the coins, return <code>-1</code>.</p>
+## Intuition
+For each coin, decide to use it or not. Recursively find minimum coins needed to make the remaining amount. Memoize results to avoid redundant calculations.
 
-<p>You may assume that you have an infinite number of each kind of coin.</p>
+## Approach
+**Memoization (Top-Down DP):**
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+1. Define `solve(amount, coins, dp)`:
+   - Base case: If `amount == 0`, return 0 (no coins needed)
+   - If `amount < 0`, return 1e9 (impossible)
+   - If `dp[amount] != -1`, return cached result
+   - Try each coin:
+     - `ans = min(ans, 1 + solve(amount - coin, coins, dp))`
+   - Memoize and return `dp[amount] = ans`
 
-<pre>
-<strong>Input:</strong> coins = [1,2,5], amount = 11
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> 11 = 5 + 5 + 1
-</pre>
+2. Initialize `dp` array with -1.
+3. Call `solve(amount, coins, dp)`.
+4. Return -1 if result is ≥ 1e9, otherwise return result.
 
-<p><strong class="example">Example 2:</strong></p>
+**Example:** `coins = [1,2,5], amount = 5`
+- Try coin 1: 1 + solve(4)
+- Try coin 2: 1 + solve(3)
+- Try coin 5: 1 + solve(0) = 1 + 0 = 1 ✓
+- Minimum: 1
 
-<pre>
-<strong>Input:</strong> coins = [2], amount = 3
-<strong>Output:</strong> -1
-</pre>
+## Time Complexity
+**O(amount × n)** where n = number of coins. Each amount state computed once; for each state, try n coins.
 
-<p><strong class="example">Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> coins = [1], amount = 0
-<strong>Output:</strong> 0
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= coins.length &lt;= 12</code></li>
-	<li><code>1 &lt;= coins[i] &lt;= 2<sup>31</sup> - 1</code></li>
-	<li><code>0 &lt;= amount &lt;= 10<sup>4</sup></code></li>
-</ul>
+## Space Complexity
+**O(amount)** — DP array size + recursion stack depth (worst case O(amount)).

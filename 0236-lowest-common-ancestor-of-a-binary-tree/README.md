@@ -1,38 +1,27 @@
-<h2><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree">236. Lowest Common Ancestor of a Binary Tree</a></h2><h3>Medium</h3><hr><p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
+# 236. Lowest Common Ancestor of a Binary Tree
 
-<p>According to the <a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor" target="_blank">definition of LCA on Wikipedia</a>: &ldquo;The lowest common ancestor is defined between two nodes <code>p</code> and <code>q</code> as the lowest node in <code>T</code> that has both <code>p</code> and <code>q</code> as descendants (where we allow <b>a node to be a descendant of itself</b>).&rdquo;</p>
+## Intuition
+The LCA of p and q is the deepest node that has both p and q in its subtree (or is p or q itself). Use post-order DFS: if both left and right subtrees contain targets, current node is the LCA.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/14/binarytree.png" style="width: 200px; height: 190px;" />
-<pre>
-<strong>Input:</strong> root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> The LCA of nodes 5 and 1 is 3.
-</pre>
+## Approach
+**Post-Order DFS:**
 
-<p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/14/binarytree.png" style="width: 200px; height: 190px;" />
-<pre>
-<strong>Input:</strong> root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
-<strong>Output:</strong> 5
-<strong>Explanation:</strong> The LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
-</pre>
+1. Define recursive function `lowestCommonAncestor(root, p, q)`:
+   - Base case: If `root == NULL || root == p || root == q`, return `root`
+   - Recurse on left subtree: `left = lowestCommonAncestor(root->left, p, q)`
+   - Recurse on right subtree: `right = lowestCommonAncestor(root->right, p, q)`
+   - If both `left` and `right` are non-NULL, return `root` (LCA found)
+   - Return whichever of `left` or `right` is non-NULL (or NULL if both are)
 
-<p><strong class="example">Example 3:</strong></p>
+2. Start from root.
 
-<pre>
-<strong>Input:</strong> root = [1,2], p = 1, q = 2
-<strong>Output:</strong> 1
-</pre>
+**Example:** Tree [3,5,1,6,2,0,8,null,null,7,4], p=5, q=1
+- Recurse left (5): returns 5 (base case)
+- Recurse right (1): returns 1 (base case)
+- Both left and right non-NULL → return 3
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+## Time Complexity
+**O(n)** — Visit each node once in worst case.
 
-<ul>
-	<li>The number of nodes in the tree is in the range <code>[2, 10<sup>5</sup>]</code>.</li>
-	<li><code>-10<sup>9</sup> &lt;= Node.val &lt;= 10<sup>9</sup></code></li>
-	<li>All <code>Node.val</code> are <strong>unique</strong>.</li>
-	<li><code>p != q</code></li>
-	<li><code>p</code> and <code>q</code> will exist in the tree.</li>
-</ul>
+## Space Complexity
+**O(h)** where h = tree height. Recursion stack depth is h.

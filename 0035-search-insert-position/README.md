@@ -1,35 +1,24 @@
-<h2><a href="https://leetcode.com/problems/search-insert-position">35. Search Insert Position</a></h2><h3>Easy</h3><hr><p>Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.</p>
+# 35. Search Insert Position
 
-<p>You must&nbsp;write an algorithm with&nbsp;<code>O(log n)</code> runtime complexity.</p>
+## Intuition
+In a sorted array, if the target isn't found, the `low` pointer will position exactly where the target should be inserted to maintain sorted order.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+## Approach
+**Binary Search with Insertion Position:**
 
-<pre>
-<strong>Input:</strong> nums = [1,3,5,6], target = 5
-<strong>Output:</strong> 2
-</pre>
+1. Initialize `low = 0` and `high = n - 1`.
+2. While `low <= high`:
+   - Calculate `mid` using `low + (high - low) / 2`
+   - If `nums[mid] == target`, return `mid`
+   - If `nums[mid] < target`, move `low = mid + 1`
+   - Otherwise, move `high = mid - 1`
+3. Return `low` — this is the insertion position if target not found, or the target index if found.
 
-<p><strong class="example">Example 2:</strong></p>
+**Example:** `nums = [1,3,5,6], target = 5` → Return 2  
+**Example:** `nums = [1,3,5,6], target = 7` → Return 4
 
-<pre>
-<strong>Input:</strong> nums = [1,3,5,6], target = 2
-<strong>Output:</strong> 1
-</pre>
+## Time Complexity
+**O(log n)** — Standard binary search.
 
-<p><strong class="example">Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [1,3,5,6], target = 7
-<strong>Output:</strong> 4
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
-	<li><code>nums</code> contains <strong>distinct</strong> values sorted in <strong>ascending</strong> order.</li>
-	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
-</ul>
+## Space Complexity
+**O(1)** — Only constant extra space.

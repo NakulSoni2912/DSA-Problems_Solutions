@@ -1,30 +1,31 @@
-<h2><a href="https://leetcode.com/problems/add-digits">258. Add Digits</a></h2><h3>Easy</h3><hr><p>Given an integer <code>num</code>, repeatedly add all its digits until the result has only one digit, and return it.</p>
+# 258. Add Digits
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+## Intuition
+Recursively sum digits until only a single digit remains. Base case: if num < 10, it's already a single digit.
 
-<pre>
-<strong>Input:</strong> num = 38
-<strong>Output:</strong> 2
-<strong>Explanation:</strong> The process is
-38 --&gt; 3 + 8 --&gt; 11
-11 --&gt; 1 + 1 --&gt; 2 
-Since 2 has only one digit, return it.
-</pre>
+## Approach
+**Recursive Digit Sum:**
 
-<p><strong class="example">Example 2:</strong></p>
+1. Base case: If `num < 10`, return `num`
+2. Extract and sum all digits of num:
+   - `sum = 0`
+   - While `num > 0`: `sum += num % 10`, `num /= 10`
+3. Recursively call `addDigits(sum)`
 
-<pre>
-<strong>Input:</strong> num = 0
-<strong>Output:</strong> 0
-</pre>
+**Example:** `num = 38`
+- Sum digits: 3 + 8 = 11
+- Recurse: Sum 1 + 1 = 2
+- Return 2
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+**Example:** `num = 0`
+- Already single digit → return 0
 
-<ul>
-	<li><code>0 &lt;= num &lt;= 2<sup>31</sup> - 1</code></li>
-</ul>
+## Time Complexity
+**O(log num × log(log num))** — Each recursion sums O(log num) digits; recursion depth is O(log(log num)) since digit sum decreases exponentially.
 
-<p>&nbsp;</p>
-<p><strong>Follow up:</strong> Could you do it without any loop/recursion in <code>O(1)</code> runtime?</p>
+## Space Complexity
+**O(log(log num))** — Recursion stack depth.
+
+---
+
+**Optimization Note:** There's a mathematical pattern (digital root formula) that solves this in O(1): `result = 1 + (num - 1) % 9` for num > 0, and 0 for num = 0. However, the provided solution uses recursion.

@@ -1,42 +1,25 @@
-<h2><a href="https://leetcode.com/problems/contains-duplicate">217. Contains Duplicate</a></h2><h3>Easy</h3><hr><p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>
+# 217. Contains Duplicate
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+## Intuition
+Use a set to track seen elements. If we encounter an element already in the set, a duplicate exists.
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [1,2,3,1]</span></p>
+## Approach
+**Hash Set Tracking:**
 
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
+1. Create an empty unordered_set.
+2. Iterate through the array:
+   - If element exists in set, return `true` (duplicate found)
+   - Otherwise, insert element into set
+3. Return `false` if loop completes (no duplicates).
 
-<p><strong>Explanation:</strong></p>
+**Example:** `nums = [1,2,3,1]`
+- Check 1 → not in set → insert
+- Check 2 → not in set → insert
+- Check 3 → not in set → insert
+- Check 1 → found in set → return true
 
-<p>The element 1 occurs at the indices 0 and 3.</p>
-</div>
+## Time Complexity
+**O(n)** — Single pass through array; set operations (insert, count) are O(1) average.
 
-<p><strong class="example">Example 2:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [1,2,3,4]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">false</span></p>
-
-<p><strong>Explanation:</strong></p>
-
-<p>All elements are distinct.</p>
-</div>
-
-<p><strong class="example">Example 3:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [1,1,1,3,3,4,3,2,4,2]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
-</ul>
+## Space Complexity
+**O(min(n, unique_elements))** — Set stores at most n elements or stops early.

@@ -16,6 +16,7 @@
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
 | [0403-frog-jump](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0403-frog-jump) |
+| [4014-minimum-total-price-after-applying-discounts](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/4014-minimum-total-price-after-applying-discounts) |
 ## Hash Table
 |  |
 | ------- |
@@ -27,6 +28,7 @@
 | ------- |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0229-majority-element-ii) |
+| [4014-minimum-total-price-after-applying-discounts](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/4014-minimum-total-price-after-applying-discounts) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -61,6 +63,7 @@
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
+| [4014-minimum-total-price-after-applying-discounts](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/4014-minimum-total-price-after-applying-discounts) |
 ## Recursion
 |  |
 | ------- |
@@ -171,4 +174,8 @@
 |  |
 | ------- |
 | [0229-majority-element-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0229-majority-element-ii) |
+## Greedy
+|  |
+| ------- |
+| [4014-minimum-total-price-after-applying-discounts](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/4014-minimum-total-price-after-applying-discounts) |
 <!---LeetCode Topics End-->

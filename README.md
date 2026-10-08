@@ -16,6 +16,7 @@
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
 | [0403-frog-jump](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0403-frog-jump) |
+| [0523-continuous-subarray-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0523-continuous-subarray-sum) |
 | [0918-maximum-sum-circular-subarray](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0918-maximum-sum-circular-subarray) |
 | [4014-minimum-total-price-after-applying-discounts](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/4014-minimum-total-price-after-applying-discounts) |
 ## Hash Table
@@ -24,6 +25,7 @@
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
 | [0229-majority-element-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0229-majority-element-ii) |
+| [0523-continuous-subarray-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0523-continuous-subarray-sum) |
 ## Sorting
 |  |
 | ------- |
@@ -34,6 +36,7 @@
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0238-product-of-array-except-self) |
+| [0523-continuous-subarray-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0523-continuous-subarray-sum) |
 ## Binary Search
 |  |
 | ------- |
@@ -111,6 +114,7 @@
 |  |
 | ------- |
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
+| [0523-continuous-subarray-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0523-continuous-subarray-sum) |
 ## Floyd's Cycle Finding Algorithm
 |  |
 | ------- |
@@ -120,6 +124,7 @@
 | ------- |
 | [0070-climbing-stairs](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0070-climbing-stairs) |
 | [0258-add-digits](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0258-add-digits) |
+| [0523-continuous-subarray-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0523-continuous-subarray-sum) |
 ## Simulation
 |  |
 | ------- |

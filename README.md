@@ -11,6 +11,7 @@
 | [0078-subsets](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0078-subsets) |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
+| [0229-majority-element-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0238-product-of-array-except-self) |
 | [0287-find-the-duplicate-number](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0322-coin-change](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0322-coin-change) |
@@ -20,10 +21,12 @@
 | ------- |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
+| [0229-majority-element-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0229-majority-element-ii) |
 ## Sorting
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
+| [0229-majority-element-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0229-majority-element-ii) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -160,4 +163,12 @@
 |  |
 | ------- |
 | [1971-find-if-path-exists-in-graph](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/1971-find-if-path-exists-in-graph) |
+## Counting
+|  |
+| ------- |
+| [0229-majority-element-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0229-majority-element-ii) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0229-majority-element-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0229-majority-element-ii) |
 <!---LeetCode Topics End-->

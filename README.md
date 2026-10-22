@@ -8,6 +8,7 @@
 | [0035-search-insert-position](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0035-search-insert-position) |
 | [0039-combination-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0046-permutations) |
+| [0066-plus-one](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0066-plus-one) |
 | [0078-subsets](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0078-subsets) |
 | [0217-contains-duplicate](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0219-contains-duplicate-ii) |
@@ -122,6 +123,7 @@
 ## Math
 |  |
 | ------- |
+| [0066-plus-one](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0066-plus-one) |
 | [0070-climbing-stairs](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0070-climbing-stairs) |
 | [0258-add-digits](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0258-add-digits) |
 | [0523-continuous-subarray-sum](https://github.com/NakulSoni2912/DSA-Problems_Solutions/tree/master/0523-continuous-subarray-sum) |
